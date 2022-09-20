@@ -1,12 +1,26 @@
 body{
-    color: #ffffff;
     background-color: #000000;
 }
 
+h4{
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+}
+
 .icon1{
+   
+    color: #ffffff; 
+    padding: 5px 170px 5px 170px;
     background-color: #198754;
 }
 
+.card-img-top2{
+    height: 220px;
+}
+
+.text1{
+    text-align: justify;
+}
 
 footer{
     color: #ffffff;
