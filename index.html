@@ -17,7 +17,8 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-xl">
+ <header>
+  <nav class="navbar navbar-expand-xl ">
     <div class="container-fluid">
       <img src="assets/img/viajes.svg" alt="icon_viajes" width="20px">
       <a class="navbar-brand" href="#">VIAJES CHILE</a>
@@ -25,18 +26,20 @@
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" href="#">Inicio</a>
-          <a class="nav-link active" href="#">Quienes Somos</a>
-          <a class="nav-link active" href="#">Destacados</a>
-          <a class="nav-link active" href="#">Contacto</a>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav data-bs-target">
+          <a class="scroll nav-link active" href="#inicio">Inicio</a>
+          <a class="scroll nav-link active d-none d-sm-block" href="#quienesomos">Quienes Somos</a>
+          <a class="scroll nav-link active" href="#destacados">Destacados</a>
+          <a class="scroll nav-link active" href="#contacto">Contacto</a>
         </div>
       </div>
     </div>
   </nav>
+</header>
 
 <!--Carrusel -->
+<section id="inicio">
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -57,17 +60,20 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </section>
   </div>
 
 <!-- Container-Texto -->
-  <h4>¿QUIÉNES SOMOS?</h4>
+<section id="quienesomos">
+  <h4 class="d-none d-sm-block">¿QUIÉNES SOMOS?</h4>
+</section>
   <hr>
 
   <div class="container text-center">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
       <div class="col">
-        <i class="icon1 fa-solid fa-plane-departure"></i>
-        <p class="text1">Lorem ipsum, dolor sit amet consectetur
+        <i class="icon1 fa-solid fa-plane-departure d-none d-sm-block"></i>
+        <p class="text1 d-none d-sm-block ms-4">Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Numquam pariatur esse amet
           ipsum atque facere blanditiis eveniet porro,
           distinctio aut beatae delectus? Aut deserunt
@@ -81,8 +87,8 @@
 
 
       <div class="col">
-
-        <p class="text1">Lorem ipsum, dolor sit amet consectetur
+        <p class="text1 ms-4 d-none d-sm-block">
+          Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Numquam pariatur esse amet
           ipsum atque facere blanditiis eveniet porro,
           distinctio aut beatae delectus? Aut deserunt
@@ -92,13 +98,13 @@
           ipsum atque facere blanditiis eveniet porro,
           distinctio aut beatae delectus? Aut deserunt
           doloribus et nam aperiam voluptas doloremque.</p>
-        <i class="icon1 fa-solid fa-mountain"></i>
+        <i class="icon1 d-none d-sm-block fa-solid fa-mountain d-none d-sm-block"></i>
       </div>
 
 
       <div class="col">
-        <i class="icon1 fa-sharp fa-solid fa-location-dot"></i>
-        <p class="text1">Lorem ipsum, dolor sit amet consectetur
+        <i class="icon1 fa-sharp fa-solid fa-location-dot d-none d-sm-block"></i>
+        <p class="text1 ms-4 d-none d-sm-block">Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Numquam pariatur esse amet
           ipsum atque facere blanditiis eveniet porro,
           distinctio aut beatae delectus? Aut deserunt
@@ -114,7 +120,9 @@
   </div>
 
 <!-- Cards -->
+<section id="destacados">
   <h4>DESTACADOS</h4>
+</section>
   <hr>
   <div class="row row-cols-1 row-cols-md-4 g-4">
     <div class="col">
@@ -160,7 +168,9 @@
   </div>
 
 <!-- Formularios -->
+<section id="contacto">
   <h4>CONTACTO</h4>
+</section>
   <hr>
   <div class="mb-3 mx-5">
     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -174,7 +184,27 @@
     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
-  <p><input class="btn btn-success mb-3 ms-5" type="submit" value="Submit"></p>
+ 
+  <button type="button " class="btn btn-success mb-3 ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Enviar
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">Alerta</h5>
+          
+        <!-- PARTE  -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¡Su mensaje a sido enviado con éxito!
+        </div>
+   </div>
+   </div>
+   </div>
 
 
 <!-- Iconos -->
@@ -183,12 +213,10 @@
       <div class="row row-cols-2">
         <div class="col">VIAJES CHILE</div>
         <div class="col">
-          <i class="fa-brands fa-square-github"></i>
-          <link rel='stylesheet'
-            href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-square-twitter"></i>
-          <i class="fa-brands fa-square-facebook"></i>
+          <a href="https://github.com/"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://cl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
       </div>
     </div>
@@ -197,7 +225,8 @@
 
   </footer>
 
-
+  <link rel='stylesheet'
+  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
