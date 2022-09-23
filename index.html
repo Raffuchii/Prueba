@@ -10,8 +10,9 @@
   <title>Viajes Chile</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-        <div class="navbar-nav data-bs-target">
+        <div class="navbar-nav ">
           <a class="scroll nav-link active" href="#inicio">Inicio</a>
           <a class="scroll nav-link active d-none d-sm-block" href="#quienesomos">Quienes Somos</a>
           <a class="scroll nav-link active" href="#destacados">Destacados</a>
@@ -68,7 +69,6 @@
   <h4 class="d-none d-sm-block">¿QUIÉNES SOMOS?</h4>
 </section>
   <hr>
-
   <div class="container text-center">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
       <div class="col">
@@ -119,25 +119,20 @@
     </div>
   </div>
 
+  
 <!-- Cards -->
 <section id="destacados">
   <h4>DESTACADOS</h4>
 </section>
   <hr>
-  <div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="row row-cols-1 row-cols-md-4 g-4">
     <div class="col">
       <div class="card text-bg-success">
+        <div class="button button1" data-bs-toggle="popover" 
+        data-bs-placement="top"
+        data-bs-title="¡Soy un anuncio!" data-bs-content="Logre hacer este popover con mi sudor, lágrimas y otros fluidos.">
         <img src="assets/img/card1.jpg" class="card-img-top" alt="paisaje1">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card text-bg-success ">
-        <img src="assets/img/card2.jpg" class="card-img-top2" alt="paisaje2">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -147,7 +142,27 @@
     </div>
     <div class="col">
       <div class="card text-bg-success">
+        <div class="button button1" data-bs-toggle="popover" 
+        data-bs-placement="top"
+        data-bs-title="¡Soy un anuncio!" data-bs-content="Logre hacer este popover con mi sudor, lágrimas y otros fluidos.">
+        <img src="assets/img/card2.jpg" class="card-img-top2 d-none d-sm-block" alt="paisaje2">
+        <img src="assets/img/card2.jpg" class="card-img-top2a d-block d-sm-none" alt="paisaje2">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="col">
+      <div class="card text-bg-success">
+        <div class="button button1" data-bs-toggle="popover" 
+        data-bs-placement="top"
+        data-bs-title="¡Soy un anuncio!" data-bs-content="Logre hacer este popover con mi sudor, lágrimas y otros fluidos.">
         <img src="assets/img/card3.jpg" class="card-img-top" alt="paisaje3">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -157,7 +172,11 @@
     </div>
     <div class="col">
       <div class="card text-bg-success">
+        <div class="button button1" data-bs-toggle="popover" 
+        data-bs-placement="top"
+        data-bs-title="¡Soy un anuncio!" data-bs-content="Logre hacer este popover con mi sudor, lágrimas y otros fluidos.">
         <img src="assets/img/card4.jpg" class="card-img-top" alt="paisaje4">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -213,27 +232,28 @@
       <div class="row row-cols-2">
         <div class="col">VIAJES CHILE</div>
         <div class="col">
-          <a href="https://github.com/"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://cl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
-              <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://cl.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
       </div>
     </div>
-
-
-
   </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  
+<script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous">
+</script>
+
 
   <link rel='stylesheet'
   href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
+  
+  <script src="assets/js/javascrip.js"></script>
 
+
+    
 </body>
-
 </html>

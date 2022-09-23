@@ -1,8 +1,15 @@
+
+
 body{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+}
+.background{
     background-color: black;
 }
 
@@ -14,7 +21,8 @@ header{
 }
 
 nav{
-    text-align: left;
+    text-align: right;
+    color: #ffffff;
 }
 
 h4{
@@ -28,9 +36,20 @@ h4{
     background-color: #198754;
 }
 
+.button1{
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+}
 
 .card-img-top2{
-    height: 220px;
+    width: 365px;
+    height: 245px;
+}
+
+.card-img-top2a{
+    width: 450px;
+    height: 350px;
 }
 
 .text1{
