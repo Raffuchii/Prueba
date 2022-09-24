@@ -1,5 +1,3 @@
-
-
 body{
     margin: 0;
     padding: 0;
@@ -9,21 +7,31 @@ body{
     color: #ffffff;
     font-family: 'Roboto Slab', serif;
 }
+
 .background{
     background-color: black;
 }
 
+/* navbar */
+
 header{
+   
+    width: 100%;
     position: fixed;
     transition: 0.5s;
     z-index: 10;
-    margin-right: auto;
 }
 
-nav{
-    text-align: right;
+.navbar-nav{
+    --bs-navbar-active-color: rgba(255, 255, 255, 0.9);
+    margin-left: auto;
+} 
+
+.navbar-brand{
     color: #ffffff;
 }
+
+/* columnas de texto (¿Quienes somos?) */
 
 h4{
     text-align: center;
@@ -31,30 +39,36 @@ h4{
 }
 
 .icon1{
+    text-align: center;
     color: #ffffff; 
-    padding: 5px 180px 5px 180px;
+    padding: 5px 150px 5px 150px;
     background-color: #198754;
 }
 
+
+.text1{
+    text-align: justify;
+}
+
+
+/* Cards (Destacados)*/
 .button1{
     text-decoration: none;
     outline: none;
     background-color: transparent;
 }
 
-.card-img-top2{
-    width: 365px;
-    height: 245px;
-}
-
-.card-img-top2a{
-    width: 450px;
-    height: 350px;
-}
-
-.text1{
-    text-align: justify;
-}
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bs-success);
+    --bs-popover-header-bg: var(--bs-success);
+    --bs-popover-header-color: var(--bs-black);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+    
+  }
+  
+/* Footer */
 
 footer{
     color: #ffffff;
